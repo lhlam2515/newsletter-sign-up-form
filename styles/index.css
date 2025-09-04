@@ -2,6 +2,10 @@
 @import url("./theme.css");
 
 body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-family);
   background-color: var(--color-blue-700);
   color: var(--color-blue-800);
@@ -9,7 +13,6 @@ body {
 
 .container {
   display: grid;
-  min-height: 100vh;
   grid-template-columns: 1fr;
 }
 
