@@ -32,6 +32,7 @@ body {
   display: flex;
   padding: var(--spacing-500) var(--spacing-300);
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: var(--spacing-200);
 }
@@ -143,4 +144,30 @@ body {
 
 .success-card__content p {
   font: var(--text-body);
+}
+
+@media (min-width: 40rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signup-card,
+  .success-card {
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 1.25rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .signup-card {
+    display: flex;
+    min-width: 50rem;
+    padding: var(--spacing-300);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
