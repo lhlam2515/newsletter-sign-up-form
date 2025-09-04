@@ -27,4 +27,10 @@
   --text-body: 400 1rem/1.5 var(--font-family);
   --text-label: 400 0.8125rem/1.5 var(--font-family);
   --text-button: 700 1rem/1.5 var(--font-family);
+
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
 }
