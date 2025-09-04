@@ -38,3 +38,23 @@
   --spacing-900: 4.5rem; /* 72px */
   --spacing-1300: 6.5rem; /* 104px */
 }
+
+.button {
+  padding: var(--spacing-200);
+  text-align: center;
+  font: var(--text-button);
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  background-color: var(--color-blue-800);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(to right, var(--color-red), hsl(25, 88%, 62%));
+  box-shadow: 0 0.75rem 1rem hsla(4, 100%, 67%, 0.5);
+}
