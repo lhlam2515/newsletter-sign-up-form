@@ -16,6 +16,7 @@
     </title>
 
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -49,10 +50,15 @@
                 <label for="email" class="form-field__label"
                   >Email address
                 </label>
-                <span aria-live="polite" class="form-field__error"></span>
+                <span
+                  id="email-error"
+                  aria-live="polite"
+                  class="form-field__error"
+                ></span>
               </div>
               <input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="email@company.com"
                 required
@@ -72,9 +78,8 @@
           <h2>Thanks for subscribing!</h2>
           <p>
             A confirmation email has been sent to
-            <strong class="submitted-email">ash@loremcompany.com</strong>.
-            Please open it and click the button inside to confirm your
-            subscription.
+            <strong id="submitted-email">ash@loremcompany.com</strong>. Please
+            open it and click the button inside to confirm your subscription.
           </p>
         </div>
         <button type="button" class="button">Dismiss message</button>
