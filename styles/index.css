@@ -25,6 +25,10 @@ body {
   background-color: var(--color-white);
 }
 
+.signup-card picture {
+  display: flex;
+}
+
 .signup-card img {
   width: 100%;
 }
@@ -179,5 +183,10 @@ body {
     padding: var(--spacing-300);
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: var(--spacing-500);
+  }
+
+  .signup-card__content {
+    padding-inline: 0;
   }
 }
